@@ -1,23 +1,17 @@
 import java.util.Arrays;
 
-
-public class Newsfeed {
+public class Newsfeed{
+    String[] topics = {"hello","satinder","how are you?"};
 
 
     public Newsfeed(){
 
     }
-
-    public String[] getTopics(){
-        String[] topics = {"Opinion", "Tech", "Science", "Health"};
-        return topics;
+    public int getLength(){
+        return topics.length;
     }
-
-
     public static void main(String[] args){
-        Newsfeed sampleFeed = new Newsfeed();
-        String[] topics = sampleFeed.getTopics();
-        System.out.println(Arrays.toString(topics));
+        Newsfeed sampleString = new Newsfeed();
+        System.out.println("The length of string is " + sampleString.getLength());
     }
 }
-
